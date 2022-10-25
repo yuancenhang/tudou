@@ -1,0 +1,67 @@
+
+server:
+  port: 8888  #待填写
+
+spring:
+  application:
+    name: xiaoyi  #待填写
+
+  #数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.101.105:3306/tudou-wms
+    username: mysql
+    password: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    host: localhost
+    port: 6379
+
+  cloud:
+    #nacos远程注册中心
+    nacos:
+      server-addr: 192.168.100.100:8848  #待填写
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+
+    #sentinel控制台
+    sentinel:
+      transport:
+        dashboard: 192.168.100.100:6666  #待填写
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    #日志输出的类
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  #mapper.xml文件路径
+  mapper-locations: classpath*:/mapper/*.xml
+  #实体类别名简称
+  type-aliases-package: com.hang.tudou.tudouware.null
+
+feign:
+  sentinel:
+    #开启feign和sentinel的整合
+    enabled: true
+
+#配置seata
+seata:
+  tx-service-group: default_tx_group
+  registry:
+    type: nacos
+    nacos:
+      server-addr: 192.168.100.100:8848  #待填写
+      application: seata-server
+      username: nacos
+      password: nacos
+      group: SEATA_GROUP
+  config:
+    type: nacos
+    nacos:
+      server-addr: 192.168.100.100:8848  #待填写
+      username: nacos
+      password: nacos
+      group: SEATA_GROUP
