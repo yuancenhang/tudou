@@ -1,5 +1,5 @@
 
-package com.hang.tudou.tudouproduct.entity;
+package com.hang.common.utils;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;

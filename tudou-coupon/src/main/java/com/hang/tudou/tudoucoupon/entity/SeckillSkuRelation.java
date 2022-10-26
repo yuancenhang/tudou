@@ -2,13 +2,14 @@
 package com.hang.tudou.tudoucoupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
 @TableName("sms_seckill_sku_relation")
-public class SeckillSkuRelation extends MyPage{
+public class SeckillSkuRelation extends MyPage {
 
 	//id
 	private Long id;

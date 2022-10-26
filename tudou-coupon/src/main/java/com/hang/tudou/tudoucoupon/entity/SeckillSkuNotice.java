@@ -2,13 +2,14 @@
 package com.hang.tudou.tudoucoupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("sms_seckill_sku_notice")
-public class SeckillSkuNotice extends MyPage{
+public class SeckillSkuNotice extends MyPage {
 
 	//id
 	private Long id;

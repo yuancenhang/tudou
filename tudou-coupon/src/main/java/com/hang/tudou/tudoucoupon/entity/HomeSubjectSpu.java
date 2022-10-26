@@ -2,11 +2,12 @@
 package com.hang.tudou.tudoucoupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("sms_home_subject_spu")
-public class HomeSubjectSpu extends MyPage{
+public class HomeSubjectSpu extends MyPage {
 
 	//id
 	private Long id;

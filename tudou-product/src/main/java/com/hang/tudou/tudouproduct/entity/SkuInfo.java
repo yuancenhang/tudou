@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouproduct.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
 @TableName("pms_sku_info")
-public class SkuInfo extends MyPage{
+public class SkuInfo extends MyPage {
 
 	//skuId
 	private Long skuId;

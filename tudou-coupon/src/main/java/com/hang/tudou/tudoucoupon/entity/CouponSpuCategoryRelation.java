@@ -2,11 +2,12 @@
 package com.hang.tudou.tudoucoupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("sms_coupon_spu_category_relation")
-public class CouponSpuCategoryRelation extends MyPage{
+public class CouponSpuCategoryRelation extends MyPage {
 
 	//id
 	private Long id;

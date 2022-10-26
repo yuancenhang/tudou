@@ -2,13 +2,14 @@
 package com.hang.tudou.tudoumember.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("ums_integration_change_history")
-public class IntegrationChangeHistory extends MyPage{
+public class IntegrationChangeHistory extends MyPage {
 
 	//id
 	private Long id;

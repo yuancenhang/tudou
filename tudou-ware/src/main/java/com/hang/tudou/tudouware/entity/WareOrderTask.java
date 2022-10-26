@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouware.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("wms_ware_order_task")
-public class WareOrderTask extends MyPage{
+public class WareOrderTask extends MyPage {
 
 	//id
 	private Long id;

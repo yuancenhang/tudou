@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.hang.tudou.tudoucoupon.entity.R;
+import com.hang.common.utils.R;
 import com.hang.tudou.tudoucoupon.service.SeckillSkuRelationService;
 import com.hang.tudou.tudoucoupon.entity.SeckillSkuRelation;
 

@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouorder.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
 @TableName("oms_refund_info")
-public class RefundInfo extends MyPage{
+public class RefundInfo extends MyPage {
 
 	//id
 	private Long id;

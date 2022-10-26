@@ -2,6 +2,7 @@
 package com.hang.tudou.tudouware.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ import java.time.LocalDateTime;
 
 @Data
 @TableName("wms_purchase")
-public class Purchase extends MyPage{
+public class Purchase extends MyPage {
 
 	//
 	private Long id;

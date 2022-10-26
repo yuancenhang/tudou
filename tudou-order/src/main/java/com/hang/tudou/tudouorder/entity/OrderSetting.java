@@ -2,11 +2,12 @@
 package com.hang.tudou.tudouorder.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("oms_order_setting")
-public class OrderSetting extends MyPage{
+public class OrderSetting extends MyPage {
 
 	//id
 	private Long id;

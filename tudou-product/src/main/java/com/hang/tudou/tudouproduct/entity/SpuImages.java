@@ -2,11 +2,12 @@
 package com.hang.tudou.tudouproduct.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("pms_spu_images")
-public class SpuImages extends MyPage{
+public class SpuImages extends MyPage {
 
 	//id
 	private Long id;

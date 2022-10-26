@@ -13,6 +13,9 @@
 
     <properties>
         <java.version>17</java.version>
+        <boot-version>2.6.11</boot-version>
+        <cloud-version>2021.0.4</cloud-version>
+        <cloud-alibaba-version>2021.0.4.0</cloud-alibaba-version>
     </properties>
 
     <modules>
@@ -21,14 +24,33 @@
         <module>tudou-order</module>
         <module>tudou-product</module>
         <module>tudou-ware</module>
+        <module>tuodu-common</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${cloud-alibaba-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${boot-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

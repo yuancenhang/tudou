@@ -2,13 +2,14 @@
 package com.hang.tudou.tudoucoupon.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
 @TableName("sms_member_price")
-public class MemberPrice extends MyPage{
+public class MemberPrice extends MyPage {
 
 	//id
 	private Long id;

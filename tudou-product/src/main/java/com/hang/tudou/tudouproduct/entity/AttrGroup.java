@@ -2,11 +2,12 @@
 package com.hang.tudou.tudouproduct.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("pms_attr_group")
-public class AttrGroup extends MyPage{
+public class AttrGroup extends MyPage {
 
 	//分组id
 	private Long attrGroupId;

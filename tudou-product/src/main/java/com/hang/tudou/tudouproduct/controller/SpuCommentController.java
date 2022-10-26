@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.hang.tudou.tudouproduct.entity.R;
+import com.hang.common.utils.R;
 import com.hang.tudou.tudouproduct.service.SpuCommentService;
 import com.hang.tudou.tudouproduct.entity.SpuComment;
 

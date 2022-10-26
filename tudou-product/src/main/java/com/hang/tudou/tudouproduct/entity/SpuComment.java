@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouproduct.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("pms_spu_comment")
-public class SpuComment extends MyPage{
+public class SpuComment extends MyPage {
 
 	//id
 	private Long id;

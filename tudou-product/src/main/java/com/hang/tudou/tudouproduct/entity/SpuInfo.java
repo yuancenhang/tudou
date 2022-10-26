@@ -2,6 +2,7 @@
 package com.hang.tudou.tudouproduct.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ import java.time.LocalDateTime;
 
 @Data
 @TableName("pms_spu_info")
-public class SpuInfo extends MyPage{
+public class SpuInfo extends MyPage {
 
 	//商品id
 	private Long id;

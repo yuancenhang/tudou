@@ -2,13 +2,14 @@
 package com.hang.tudou.tudoumember.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
 @TableName("ums_member_level")
-public class MemberLevel extends MyPage{
+public class MemberLevel extends MyPage {
 
 	//id
 	private Long id;

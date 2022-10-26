@@ -4,9 +4,9 @@ package com.hang.tudou.tudouware.controller;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.hang.common.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.hang.tudou.tudouware.entity.R;
 import com.hang.tudou.tudouware.service.WareOrderTaskDetailService;
 import com.hang.tudou.tudouware.entity.WareOrderTaskDetail;
 

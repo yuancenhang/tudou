@@ -2,11 +2,12 @@
 package com.hang.tudou.tudouware.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("wms_ware_sku")
-public class WareSku extends MyPage{
+public class WareSku extends MyPage {
 
 	//id
 	private Long id;

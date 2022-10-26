@@ -2,11 +2,12 @@
 package com.hang.tudou.tudoumember.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("ums_member_receive_address")
-public class MemberReceiveAddress extends MyPage{
+public class MemberReceiveAddress extends MyPage {
 
 	//id
 	private Long id;

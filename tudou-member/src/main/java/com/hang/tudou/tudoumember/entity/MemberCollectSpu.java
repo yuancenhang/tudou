@@ -2,13 +2,14 @@
 package com.hang.tudou.tudoumember.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("ums_member_collect_spu")
-public class MemberCollectSpu extends MyPage{
+public class MemberCollectSpu extends MyPage {
 
 	//id
 	private Long id;

@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouorder.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
 @TableName("oms_order_item")
-public class OrderItem extends MyPage{
+public class OrderItem extends MyPage {
 
 	//id
 	private Long id;

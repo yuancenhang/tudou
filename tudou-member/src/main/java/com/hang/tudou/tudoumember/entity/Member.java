@@ -2,6 +2,7 @@
 package com.hang.tudou.tudoumember.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -9,7 +10,7 @@ import java.util.Date;
 
 @Data
 @TableName("ums_member")
-public class Member extends MyPage{
+public class Member extends MyPage {
 
 	//id
 	private Long id;

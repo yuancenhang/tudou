@@ -2,6 +2,7 @@
 package com.hang.tudou.tudouorder.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ import java.time.LocalDateTime;
 
 @Data
 @TableName("oms_order")
-public class Order extends MyPage{
+public class Order extends MyPage {
 
 	//id
 	private Long id;

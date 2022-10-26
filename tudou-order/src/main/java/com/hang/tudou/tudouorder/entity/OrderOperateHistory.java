@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouorder.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("oms_order_operate_history")
-public class OrderOperateHistory extends MyPage{
+public class OrderOperateHistory extends MyPage {
 
 	//id
 	private Long id;

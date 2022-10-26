@@ -2,11 +2,12 @@
 package com.hang.tudou.tudouproduct.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 @Data
 @TableName("pms_brand")
-public class Brand extends MyPage{
+public class Brand extends MyPage {
 
 	//品牌id
 	private Long brandId;

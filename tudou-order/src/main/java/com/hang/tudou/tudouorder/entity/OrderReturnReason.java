@@ -2,13 +2,14 @@
 package com.hang.tudou.tudouorder.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hang.common.utils.MyPage;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
 @TableName("oms_order_return_reason")
-public class OrderReturnReason extends MyPage{
+public class OrderReturnReason extends MyPage {
 
 	//id
 	private Long id;
