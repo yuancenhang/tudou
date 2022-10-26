@@ -1,10 +1,10 @@
 
 server:
-  port: 8888  #待填写
+  port: 8804
 
 spring:
   application:
-    name: xiaoyi  #待填写
+    name: tudou-product
 
   #数据库
   datasource:
@@ -15,13 +15,13 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 
   redis:
-    host: localhost
+    host: 192.168.101.105
     port: 6379
 
   cloud:
     #nacos远程注册中心
     nacos:
-      server-addr: 192.168.100.100:8848  #待填写
+      server-addr: 192.168.101.105:8848
       discovery:
         username: nacos
         password: nacos
@@ -30,7 +30,7 @@ spring:
     #sentinel控制台
     sentinel:
       transport:
-        dashboard: 192.168.100.100:6666  #待填写
+        dashboard: 192.168.101.105:6666
 
 mybatis-plus:
   configuration:
@@ -40,7 +40,7 @@ mybatis-plus:
   #mapper.xml文件路径
   mapper-locations: classpath*:/mapper/*.xml
   #实体类别名简称
-  type-aliases-package: com.hang.tudou.tudouproduct.null
+  type-aliases-package: com.hang.tudou.tudouproduct.entity
 
 feign:
   sentinel:
@@ -53,7 +53,7 @@ seata:
   registry:
     type: nacos
     nacos:
-      server-addr: 192.168.100.100:8848  #待填写
+      server-addr: 192.168.101.105:8848  #待填写
       application: seata-server
       username: nacos
       password: nacos
@@ -61,7 +61,7 @@ seata:
   config:
     type: nacos
     nacos:
-      server-addr: 192.168.100.100:8848  #待填写
+      server-addr: 192.168.101.105:8848  #待填写
       username: nacos
       password: nacos
       group: SEATA_GROUP
