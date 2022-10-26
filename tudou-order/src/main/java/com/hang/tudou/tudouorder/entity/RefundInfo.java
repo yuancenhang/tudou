@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudouorder.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 public class RefundInfo extends MyPage {
 
 	//id
+	@TableId
 	private Long id;
 
 	//退款的订单

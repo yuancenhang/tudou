@@ -42,6 +42,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.6.11</version>
+        </dependency>
         <!--lombok简化实体类-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -76,10 +81,10 @@
             <artifactId>spring-cloud-loadbalancer</artifactId>
         </dependency>
         <!--seata依赖，分布式事务-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
-        </dependency>
+        </dependency>-->
         <!--数据源-->
         <dependency>
             <groupId>com.alibaba</groupId>

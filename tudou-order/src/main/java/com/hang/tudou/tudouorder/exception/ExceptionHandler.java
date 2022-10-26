@@ -1,7 +1,7 @@
 
 package com.hang.tudou.tudouorder.exception;
 
-import com.hang.tudou.tudouorder.entity.R;
+import com.hang.common.utils.R;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ResponseBody;

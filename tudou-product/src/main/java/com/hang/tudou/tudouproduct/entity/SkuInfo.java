@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudouproduct.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 public class SkuInfo extends MyPage {
 
 	//skuId
+	@TableId
 	private Long skuId;
 
 	//spuId

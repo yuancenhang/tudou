@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudouproduct.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -10,6 +11,7 @@ import lombok.Data;
 public class Brand extends MyPage {
 
 	//品牌id
+	@TableId
 	private Long brandId;
 
 	//品牌名

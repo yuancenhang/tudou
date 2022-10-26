@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudouproduct.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 public class SpuInfo extends MyPage {
 
 	//商品id
+	@TableId
 	private Long id;
 
 	//商品名称

@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudoucoupon.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 public class Coupon extends MyPage {
 
 	//id
+	@TableId
 	private Long id;
 
 	//优惠卷类型[0->全场赠券；1->会员赠券；2->购物赠券；3->注册赠券]

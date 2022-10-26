@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudoumember.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 public class MemberCollectSpu extends MyPage {
 
 	//id
+	@TableId
 	private Long id;
 
 	//会员id

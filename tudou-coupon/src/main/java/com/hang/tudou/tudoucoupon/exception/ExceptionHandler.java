@@ -1,7 +1,7 @@
 
 package com.hang.tudou.tudoucoupon.exception;
 
-import com.hang.tudou.tudoucoupon.entity.R;
+import com.hang.common.utils.R;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ResponseBody;

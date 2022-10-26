@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudoucoupon.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 public class SeckillPromotion extends MyPage {
 
 	//id
+	@TableId
 	private Long id;
 
 	//活动标题

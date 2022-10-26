@@ -2,7 +2,7 @@
 package com.hang.tudou.tudouware.filter;
 
 import com.alibaba.fastjson2.JSON;
-import com.hang.tudou.tudouware.entity.R;
+import com.hang.common.utils.R;
 import org.springframework.util.AntPathMatcher;
 
 import javax.servlet.*;

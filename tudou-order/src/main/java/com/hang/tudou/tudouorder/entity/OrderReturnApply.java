@@ -1,6 +1,7 @@
 
 package com.hang.tudou.tudouorder.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 public class OrderReturnApply extends MyPage {
 
 	//id
+	@TableId
 	private Long id;
 
 	//order_id

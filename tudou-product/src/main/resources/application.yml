@@ -41,6 +41,9 @@ mybatis-plus:
   mapper-locations: classpath*:/mapper/*.xml
   #实体类别名简称
   type-aliases-package: com.hang.tudou.tudouproduct.entity
+  global-config:
+    db-config:
+      id-type: assign_id
 
 feign:
   sentinel:
