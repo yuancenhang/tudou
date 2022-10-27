@@ -1,10 +1,13 @@
 
 package com.hang.tudou.tudouproduct.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.hang.common.utils.MyPage;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @TableName("pms_category")
@@ -38,6 +41,7 @@ public class Category extends MyPage {
 	//商品数量
 	private Integer productCount;
 
-
+	@TableField(exist = false)
+	private List<Category> children;
 
 }

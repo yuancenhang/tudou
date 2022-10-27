@@ -10,12 +10,24 @@ import com.hang.common.utils.R;
 import com.hang.tudou.tudouproduct.service.CategoryService;
 import com.hang.tudou.tudouproduct.entity.Category;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
 
 	@Autowired
 	CategoryService categoryService;
+
+	/**
+	 * 获取所有,树形分层
+	 * @return
+	 */
+	@GetMapping("/getAll")
+	public R<List<Category>> getAll(){
+		List<Category> list = categoryService.getAll();
+		return list.isEmpty() ? R.error("还没有数据") : R.success(list);
+	}
 
 	/*
 	新增操作
