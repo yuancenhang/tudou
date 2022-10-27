@@ -31,7 +31,7 @@ spring:
     #sentinel控制台
     sentinel:
       transport:
-        dashboard: 192.168.101.105:6666
+        dashboard: 192.168.101.105:8858
 
 mybatis-plus:
   configuration:
@@ -69,3 +69,4 @@ seata:
       username: nacos
       password: nacos
       group: SEATA_GROUP
+
