@@ -1,0 +1,53 @@
+server:
+  port: 8866
+spring:
+  cloud:
+    gateway:
+      #路由规则，List，-表示List的一个下标
+      routes:
+        #第一个规则
+        - id: coupon_route #给这个规则起名
+          uri: lb://tudou-coupon #转发地址，lb表示使用nacos并遵循负载均衡
+          #断言（条件），List
+          predicates:
+            #给真正的路径加前缀
+            - Path=/coupon/**
+            #过滤，List
+          filters:
+            - StripPrefix=1 #转发时去掉路径中的第一层
+        #第二个规则
+        - id: member_route
+          uri: lb://tudou-member
+          predicates:
+            - Path=/member/**
+          filters:
+            - StripPrefix=1
+        #第三个规则
+        - id: order_route
+          uri: lb://tudou-order
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix=1
+        #第4个规则
+        - id: product_route
+          uri: lb://tudou-product
+          predicates:
+            - Path=/product/**
+          filters:
+            - StripPrefix=1
+        #第5个规则
+        - id: ware_route
+          uri: lb://tudou-ware
+          predicates:
+            - Path=/ware/**
+          filters:
+            - StripPrefix=1
+
+    #gateway需要从nacos获取服务名，地址
+    nacos:
+      server-addr: 192.168.101.105:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: cb801abe-2b19-4a51-b04e-9d95eb86ed31
