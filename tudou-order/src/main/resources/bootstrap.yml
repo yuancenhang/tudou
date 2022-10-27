@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: tudou-order   #项目在nacos的名称
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.101.105:8848   #nacos的地址
+        namespace: cb801abe-2b19-4a51-b04e-9d95eb86ed31   #自己的命名空间
+        file-extension: yaml  #nacos上创建三个文件的类型
+        group: dev    #创建三个文件时用的分组
+        #要组合的yml文件,就是项目启动时从nacos上拉取的配置
+        extension-configs:
+          - data-id: alibaba.yml
+            group: dev
+            refresh: true   #true好像是自动更新的意思
+          - data-id: mp.yml
+            group: dev
+            refresh: true
+          - data-id: other.yml
+            group: dev
+            refresh: true
+        username: nacos
+        password: nacos

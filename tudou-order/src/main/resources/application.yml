@@ -2,71 +2,12 @@
 server:
   port: 8080
 #  port: 8803
-
-spring:
-  application:
-    name: tudou-order
-
-  #数据库
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.101.105:3306/tudou-oms
-    username: mysql
-    password: mysql
-    type: com.alibaba.druid.pool.DruidDataSource
-
-  redis:
-    host: 192.168.101.105
-    port: 6379
-
-  cloud:
-    #nacos远程注册中心
-    nacos:
-      server-addr: 192.168.101.105:8848
-      discovery:
-        username: nacos
-        password: nacos
-        namespace: public
-
-    #sentinel控制台
-    sentinel:
-      transport:
-        dashboard: 192.168.101.105:8858
-
 mybatis-plus:
-  configuration:
-    map-underscore-to-camel-case: true
-    #日志输出的类
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  #mapper.xml文件路径
-  mapper-locations: classpath*:/mapper/*.xml
   #实体类别名简称
   type-aliases-package: com.hang.tudou.tudouorder.entity
-  global-config:
-    db-config:
-      id-type: assign_id
+spring:
+  #数据库
+  datasource:
+    url: jdbc:mysql://192.168.101.105:3306/tudou-oms
 
-feign:
-  sentinel:
-    #开启feign和sentinel的整合
-    enabled: true
-
-#配置seata
-seata:
-  tx-service-group: default_tx_group
-  registry:
-    type: nacos
-    nacos:
-      server-addr: 192.168.101.105:8848
-      application: seata-server
-      username: nacos
-      password: nacos
-      group: SEATA_GROUP
-  config:
-    type: nacos
-    nacos:
-      server-addr: 192.168.101.105:8848
-      username: nacos
-      password: nacos
-      group: SEATA_GROUP
 

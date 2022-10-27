@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: tudou-ware
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.101.105:8848
+        namespace: cb801abe-2b19-4a51-b04e-9d95eb86ed31
+        file-extension: yaml  #文件类型
+        group: dev
+        #要组合的yml文件
+        extension-configs:
+          - data-id: alibaba.yml
+            group: dev
+            refresh: true
+          - data-id: mp.yml
+            group: dev
+            refresh: true
+          - data-id: other.yml
+            group: dev
+            refresh: true
