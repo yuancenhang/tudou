@@ -18,7 +18,7 @@ public class Category extends MyPage {
 	private Long catId;
 
 	//分类名称
-	private Character name;
+	private String name;
 
 	//父分类id
 	private Long parentCid;
@@ -33,10 +33,10 @@ public class Category extends MyPage {
 	private Integer sort;
 
 	//图标地址
-	private Character icon;
+	private String icon;
 
 	//计量单位
-	private Character productUnit;
+	private String productUnit;
 
 	//商品数量
 	private Integer productCount;

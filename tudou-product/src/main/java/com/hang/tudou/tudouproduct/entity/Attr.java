@@ -15,7 +15,7 @@ public class Attr extends MyPage {
 	private Long attrId;
 
 	//属性名
-	private Character attrName;
+	private String attrName;
 
 	//是否需要检索[0-不需要，1-需要]
 	private Integer searchType;
@@ -24,7 +24,7 @@ public class Attr extends MyPage {
 	private String icon;
 
 	//可选值列表[用逗号分隔]
-	private Character valueSelect;
+	private String valueSelect;
 
 	//属性类型[0-销售属性，1-基本属性，2-既是销售属性又是基本属性]
 	private Integer attrType;

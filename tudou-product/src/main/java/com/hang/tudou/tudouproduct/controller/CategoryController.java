@@ -26,6 +26,7 @@ public class CategoryController {
 	@GetMapping("/getAll")
 	public R<List<Category>> getAll(){
 		List<Category> list = categoryService.getAll();
+		System.out.println("查到的数据:-----------" + list);
 		return list.isEmpty() ? R.error("还没有数据") : R.success(list);
 	}
 

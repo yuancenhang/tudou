@@ -15,7 +15,7 @@ public class Brand extends MyPage {
 	private Long brandId;
 
 	//品牌名
-	private Character name;
+	private String name;
 
 	//品牌logo地址
 	private String logo;
@@ -27,7 +27,7 @@ public class Brand extends MyPage {
 	private Integer showStatus;
 
 	//检索首字母
-	private Character firstLetter;
+	private String firstLetter;
 
 	//排序
 	private Integer sort;

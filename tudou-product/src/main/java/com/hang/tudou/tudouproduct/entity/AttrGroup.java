@@ -15,7 +15,7 @@ public class AttrGroup extends MyPage {
 	private Long attrGroupId;
 
 	//组名
-	private Character attrGroupName;
+	private String attrGroupName;
 
 	//排序
 	private Integer sort;

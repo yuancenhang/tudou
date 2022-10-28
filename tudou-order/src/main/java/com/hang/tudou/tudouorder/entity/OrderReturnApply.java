@@ -24,7 +24,7 @@ public class OrderReturnApply extends MyPage {
 	private Long skuId;
 
 	//订单编号
-	private Character orderSn;
+	private String orderSn;
 
 	//申请时间
 	private LocalDateTime createTime;

@@ -26,7 +26,7 @@ public class WareOrderTask extends MyPage {
 	private String consignee;
 
 	//收货人电话
-	private Character consigneeTel;
+	private String consigneeTel;
 
 	//配送地址
 	private String deliveryAddress;
@@ -44,7 +44,7 @@ public class WareOrderTask extends MyPage {
 	private String orderBody;
 
 	//物流单号
-	private Character trackingNo;
+	private String trackingNo;
 
 	//create_time
 	private LocalDateTime createTime;

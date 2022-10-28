@@ -22,7 +22,7 @@ public class Order extends MyPage {
 	private Long memberId;
 
 	//订单号
-	private Character orderSn;
+	private String orderSn;
 
 	//使用的优惠券
 	private Long couponId;

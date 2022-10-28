@@ -21,7 +21,7 @@ public class Member extends MyPage {
 	private Long levelId;
 
 	//用户名
-	private Character username;
+	private String username;
 
 	//密码
 	private String password;

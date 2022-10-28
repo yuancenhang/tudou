@@ -24,7 +24,7 @@ public class Purchase extends MyPage {
 	private String assigneeName;
 
 	//
-	private Character phone;
+	private String phone;
 
 	//
 	private Integer priority;

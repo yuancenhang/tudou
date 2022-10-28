@@ -20,7 +20,7 @@ public class OrderItem extends MyPage {
 	private Long orderId;
 
 	//order_sn
-	private Character orderSn;
+	private String orderSn;
 
 	//spu_id
 	private Long spuId;

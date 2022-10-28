@@ -18,7 +18,7 @@ public class PaymentInfo extends MyPage {
 	private Long id;
 
 	//订单号（对外业务号）
-	private Character orderSn;
+	private String orderSn;
 
 	//订单id
 	private Long orderId;
